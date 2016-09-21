@@ -1,0 +1,14 @@
+List of differences done from the original Spring repo (Release 1.0.2)
+1. pom.xml (line 62-64) -> Changed from
+  <groupId>org.opensaml</groupId>
+      <artifactId>opensaml</artifactId>
+<version>2.6.4</version>
+
+2. pom.xml (line #5) Renamed the group id
+<groupId>com.mobileiron.springframework.security.extensions</groupId>
+
+3. org.springframework.security.saml.websso.WebSSOProfileConsumerImpl 
+Changed line # 138 -140
+            if (xmlObject == null) {
+                log.info("InResponseToField of the Response doesn't correspond to sent message");
+                // throw new SAMLException("InResponseToField of the Response doesn't correspond to sent message " + response.getInResponseTo());
